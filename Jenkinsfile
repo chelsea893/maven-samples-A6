@@ -10,11 +10,6 @@ pipeline {
                 git(url: 'https://github.com/chelsea893/maven-samples-A6.git', branch: 'master')
             }
         }
-        stage('run') {
-            steps {
-                sh 'mvn verify'
-            }
-        }
         stage('Git Bisect') {
             steps {
                 script {
